@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>The World in One Page — Monday Edition — 23 November 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#ddd5bf}
+.page{width:1024px;height:1024px;background:#f8f3e4;color:#1d1a14;font-family:'Noto Serif',Georgia,serif;padding:2px 20px 1px;display:flex;flex-direction:column;overflow:hidden}
+.eyebrow{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #1d1a14;padding-bottom:1px;font-family:'Noto Sans',sans-serif;font-size:10px;line-height:1.1;letter-spacing:.05em}
+.eyebrow .paper{font-weight:700;color:#b3271e}
+.masthead{text-align:center;padding-top:2px}
+.masthead h1{font-family:'Noto Serif Display',serif;font-weight:900;font-size:66px;line-height:.96;letter-spacing:.5px;color:#1d1a14}
+.masthead .sub{font-style:italic;font-size:14px;color:#4a4436;margin-top:0}
+.stats{display:flex;justify-content:space-between;border-top:2px solid #1d1a14;border-bottom:1px solid #1d1a14;padding:2px 2px 0;margin-top:2px}
+.stat{text-align:center;flex:1}
+.stat .badge{display:inline-block;background:#1d1a14;color:#f8f3e4;font-size:9px;width:12px;height:12px;line-height:12px;border-radius:50%;font-family:'Noto Sans',sans-serif;font-weight:700;margin-right:3px}
+.stat b{display:block;color:#b3271e;font-family:'Noto Serif Display',serif;font-weight:900;font-size:32px;line-height:.86}
+.stat .lab{display:block;font-family:'Noto Sans',sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:.04em;line-height:1.0}
+.timeline{display:flex;align-items:center;gap:7px;padding:0;border-bottom:1px solid #1d1a14}
+.tlabel{color:#b3271e;font-family:'Noto Sans',sans-serif;font-weight:700;font-size:10px;letter-spacing:.05em;white-space:nowrap}
+.stop{font-family:'Noto Sans',sans-serif;font-size:9.5px;white-space:nowrap}
+.stop b{color:#b3271e}
+.regionbar{margin-top:1px}
+.regionbar .bar{display:flex;height:9px}
+.regionlegend{display:flex;justify-content:space-between;padding-top:0;font-family:'Noto Sans',sans-serif;font-size:9.5px}
+.chip{display:flex;align-items:center;gap:4px}
+.chip i{width:9px;height:9px;display:inline-block}
+.chip b{font-weight:700}
+.leads{display:flex;gap:12px;padding:2px 0 2px;border-bottom:2px solid #1d1a14}
+.lead{flex:1;min-width:0}
+.lead svg{display:block;width:100%}
+.kickrow{display:flex;justify-content:space-between;align-items:center;margin:1px 0 1px}
+.kickbar{font-family:'Noto Sans',sans-serif;font-size:9px;font-weight:700;letter-spacing:.04em}
+.pill{font-family:'Noto Sans',sans-serif;font-size:9px;font-weight:700;color:#f8f3e4;padding:1px 5px;border-radius:2px;letter-spacing:.03em}
+.p-conf{background:#2e7d4f}
+.p-off{background:#2e5fa3}
+.p-rep{background:#b3271e}
+.p-claim{background:#c77f1a;color:#1d1a14}
+.lead h3{font-size:18px;line-height:1.1}
+.lead p{font-size:11px;line-height:1.12}
+.src{font-style:italic;font-size:9.5px;color:#55503f;margin-top:0}
+.grid{display:flex;flex-direction:column;gap:2px;padding:2px 0 2px;border-bottom:2px solid #1d1a14}
+.grow{display:flex;gap:10px}
+.card{flex:1;min-width:0}
+.card svg{display:block;width:100%}
+.card h3{font-size:12.5px;line-height:1.10}
+.card p{font-size:10.5px;line-height:1.12}
+.band{display:flex;gap:14px;padding:2px 0 1px;border-bottom:2px solid #1d1a14;flex:1;min-height:0}
+.mapwrap{flex:0 0 440px}
+.mapwrap h4{font-family:'Noto Sans',sans-serif;font-size:11px;letter-spacing:.06em;color:#b3271e;margin-bottom:2px}
+.mapwrap svg{display:block}
+.maplegend{font-family:'Noto Sans',sans-serif;font-size:9.5px;padding-top:2px}
+.briefwrap{flex:1;min-width:0;display:flex;flex-direction:column}
+.briefhead{display:flex;justify-content:space-between;font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:.05em}
+.briefs{display:flex;gap:14px;margin-top:1px}
+.bcol{flex:1;min-width:0}
+.brief{font-size:9px;line-height:1.12;margin-bottom:0}
+.brief .num{font-weight:700;font-size:10px}
+.brief .dateline{font-weight:700;font-variant:small-caps;font-size:10.5px;letter-spacing:.03em}
+.brief .bsrc{font-style:italic}
+.pilllegend{margin-top:auto;padding-top:2px;font-family:'Noto Sans',sans-serif;font-size:9px;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.datecheck{border:2px solid #b3271e;padding:2px 8px 2px;margin-top:2px}
+.datecheck h4{color:#b3271e;font-family:'Noto Sans',sans-serif;font-size:11px;letter-spacing:.04em}
+.datecheck p{font-size:9.5px;line-height:1.12}
+.verdict{display:flex;gap:10px;align-items:baseline;justify-content:center;padding-top:0}
+.verdict .vlabel{font-family:'Noto Sans',sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;color:#b3271e}
+.verdict .vtext{font-family:'Noto Serif Display',serif;font-weight:700;font-size:13px}
+footer{font-size:8px;font-family:'Noto Sans',sans-serif;color:#55503f;display:flex;justify-content:space-between;border-top:1px solid #1d1a14;margin-top:1px;padding-top:1px}
+</style></head>
+<body><div class="page">
+<div class="eyebrow"><span class="paper">THE WORLD IN ONE PAGE</span><span>32 stories &middot; 7 regions &middot; 13 drawn</span><span>Monday edition &middot; Vol. I &mdash; No. 327</span></div>
+<header class="masthead"><h1>Monday 23 November 2026</h1><div class="sub">Seven sea drones sink a Russian corvette at Benghazi &middot; Huang back at Nvidia as shares soar 31% &middot; Dymer toll reaches 11</div></header>
+<div class="stats">
+<div class="stat"><b>7</b><span class="lab"><span class="badge">1</span>Sea drones at Benghazi</span></div>
+<div class="stat"><b>31%</b><span class="lab"><span class="badge">2</span>Nvidia shares jump</span></div>
+<div class="stat"><b>11</b><span class="lab"><span class="badge">3</span>Dymer dead</span></div>
+<div class="stat"><b>$1.62bn</b><span class="lab"><span class="badge">4</span>India&ndash;Nepal package</span></div>
+<div class="stat"><b>429</b><span class="lab"><span class="badge">6</span>Flights grounded</span></div>
+<div class="stat"><b>91</b><span class="lab"><span class="badge">12</span>Bangladesh all out</span></div>
+</div>
+<div class="timeline"><span class="tlabel">THE DAY IN UTC</span>
+<div class="stop"><b>00:55</b> MQ-1 downed</div>
+<div class="stop"><b>06:00</b> Belgium shuts</div>
+<div class="stop"><b>08:05</b> Corvette sunk</div>
+<div class="stop"><b>13:56</b> Iran: &ldquo;all means&rdquo;</div>
+<div class="stop"><b>14:01</b> Huang reinstated</div>
+<div class="stop"><b>15:35</b> EU sanctions</div>
+<div class="stop"><b>15:42</b> UNRWA killed</div>
+<div class="stop"><b>16:59</b> Bangladesh 91</div>
+</div>
+<div class="regionbar"><div class="bar">
+<div style="background:#2e5fa3;flex:7"></div>
+<div style="background:#b3271e;flex:7"></div>
+<div style="background:#c77f1a;flex:5"></div>
+<div style="background:#7a4a8c;flex:7"></div>
+<div style="background:#2e7d4f;flex:3"></div>
+<div style="background:#1f7a7a;flex:2"></div>
+<div style="background:#8c2f2f;flex:1"></div>
+</div>
+<div class="regionlegend">
+<span class="chip"><i style="background:#2e5fa3"></i><b>7</b><span>Europe</span></span>
+<span class="chip"><i style="background:#b3271e"></i><b>7</b><span>Asia-Pacific</span></span>
+<span class="chip"><i style="background:#c77f1a"></i><b>5</b><span>Americas</span></span>
+<span class="chip"><i style="background:#7a4a8c"></i><b>7</b><span>Mideast</span></span>
+<span class="chip"><i style="background:#2e7d4f"></i><b>3</b><span>Africa</span></span>
+<span class="chip"><i style="background:#1f7a7a"></i><b>2</b><span>Oceania</span></span>
+<span class="chip"><i style="background:#8c2f2f"></i><b>1</b><span>World / Space</span></span>
+</div></div>
+<section class="leads">
+<article class="lead"><svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="80" fill="#2c4a73"/>
+<g fill="#f8f3e4"><circle cx="24" cy="10" r="1.6"/><circle cx="70" cy="5" r="1.6"/><circle cx="150" cy="8" r="1.6"/><circle cx="230" cy="6" r="1.6"/><circle cx="278" cy="13" r="1.6"/><circle cx="120" cy="16" r="1.6"/><circle cx="196" cy="18" r="1.6"/><circle cx="44" cy="22" r="1.6"/></g>
+<rect x="0" y="46" width="300" height="34" fill="#3f7d8c"/>
+<path d="M0 52 Q25 48 50 52 T100 52 T150 52 T200 52 T250 52 T300 52" fill="none" stroke="#f8f3e4" stroke-width="1.5" opacity="0.7"/>
+<path d="M0 62 Q25 58 50 62 T100 62 T150 62 T200 62 T250 62 T300 62" fill="none" stroke="#f8f3e4" stroke-width="1.5" opacity="0.5"/>
+<g fill="#1d1a14"><rect x="118" y="26" width="64" height="16"/><rect x="128" y="16" width="6" height="10"/><rect x="164" y="16" width="6" height="10"/><rect x="146" y="10" width="8" height="8"/></g>
+<circle cx="150" cy="14" r="5" fill="#e8a34c"/>
+<circle cx="206" cy="30" r="12" fill="#e8a34c"/>
+<circle cx="206" cy="30" r="6" fill="#b3271e"/>
+<g fill="#e8a34c"><ellipse cx="86" cy="40" rx="11" ry="3.5"/><rect x="80" y="40" width="12" height="3"/><rect x="76" y="38" width="4" height="2.5"/><rect x="92" y="38" width="4" height="2.5"/></g>
+<g fill="#e8a34c"><ellipse cx="238" cy="44" rx="11" ry="3.5"/><rect x="232" y="44" width="12" height="3"/><rect x="228" y="42" width="4" height="2.5"/><rect x="244" y="42" width="4" height="2.5"/></g>
+<path d="M86 44 Q120 52 150 44" fill="none" stroke="#e8a34c" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="150" y="76" font-size="23" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">7 DRONES</text>
+</svg><div class="kickrow"><div class="kickbar">1 &middot; AFRICA &middot; BENGHAZI</div><span class="pill p-rep">REPORTED</span></div><h3>Seven sea drones sink Russian corvette</h3><p>Zelenskyy says the Merkury sank; a Ka-27 went down with her, the Angara hit.</p><div class="src">Reuters / AP &middot; Mon 23 Nov</div></article>
+<article class="lead"><svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="80" fill="#76b900"/>
+<rect x="0" y="58" width="300" height="22" fill="#5a8f00"/>
+<rect x="96" y="8" width="108" height="44" fill="#1d1a14"/>
+<rect x="108" y="18" width="84" height="6" fill="#76b900"/>
+<rect x="108" y="28" width="60" height="6" fill="#76b900"/>
+<rect x="108" y="38" width="72" height="6" fill="#f8f3e4"/>
+<g fill="#f8f3e4"><circle cx="30" cy="66" r="4"/><circle cx="52" cy="70" r="4"/><circle cx="74" cy="64" r="4"/></g>
+<path d="M20 70 L80 30 L130 42 L220 10 L278 4" fill="none" stroke="#b3271e" stroke-width="4"/>
+<polygon points="278,4 262,4 274,18" fill="#b3271e"/>
+<text x="150" y="76" font-size="23" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">+31%</text>
+</svg><div class="kickrow"><div class="kickbar">2 &middot; AMERICAS &middot; NEW YORK</div><span class="pill p-conf">CONFIRMED</span></div><h3>Huang back at Nvidia; shares soar 31%</h3><p>The board reinstated its co-founder after 11 days; the stock added $952bn.</p><div class="src">Reuters / CNN &middot; Mon 23 Nov</div></article>
+<article class="lead"><svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="80" fill="#e8a34c"/>
+<circle cx="258" cy="14" r="11" fill="#f8f3e4"/>
+<rect x="0" y="58" width="300" height="22" fill="#8a6b3f"/>
+<g fill="#6b6b5e"><rect x="40" y="24" width="46" height="34"/><rect x="48" y="30" width="8" height="8"/><rect x="64" y="30" width="8" height="8"/><rect x="48" y="44" width="8" height="8"/><rect x="64" y="44" width="8" height="8"/></g>
+<g fill="#8a8a7a"><rect x="104" y="18" width="46" height="40"/><rect x="112" y="24" width="8" height="8"/><rect x="128" y="24" width="8" height="8"/><rect x="112" y="38" width="8" height="8"/><rect x="128" y="38" width="8" height="8"/></g>
+<path d="M104 18 L118 4 L132 18" fill="#b3271e"/>
+<g fill="#f8f3e4"><rect x="168" y="30" width="46" height="28"/><rect x="176" y="36" width="8" height="8"/><rect x="192" y="36" width="8" height="8"/></g>
+<rect x="232" y="36" width="40" height="22" fill="#b3271e"/>
+<text x="252" y="51" font-size="11" fill="#f8f3e4" text-anchor="middle" font-family="Noto Sans, sans-serif" font-weight="700">RESCUE</text>
+<path d="M118 4 L118 0" stroke="#1d1a14" stroke-width="2"/>
+<text x="150" y="76" font-size="23" fill="#1d1a14" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">14 HOURS</text>
+</svg><div class="kickrow"><div class="kickbar">3 &middot; EUROPE &middot; DYMER</div><span class="pill p-conf">CONFIRMED</span></div><h3>Dymer toll reaches 11; boy survives 14 hours</h3><p>Rescuers finished the search; a seven-year-old was pulled alive.</p><div class="src">Reuters &middot; Mon 23 Nov</div></article>
+</section>
+<section class="grid"><div class="grow">
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#f3e9d2"/>
+<polygon points="0,58 34,14 68,58" fill="#7a9c6a"/>
+<polygon points="52,58 88,6 124,58" fill="#5d4a2c"/>
+<polygon points="104,58 142,18 180,58" fill="#8a6b3f"/>
+<polygon points="76,6 88,6 82,0" fill="#f8f3e4"/>
+<path d="M0 50 Q48 44 95 50 T190 50" fill="none" stroke="#2e5fa3" stroke-width="3"/>
+<text x="95" y="34" font-size="15" fill="#1d1a14" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">$1.62bn</text>
+</svg><div class="kickrow"><div class="kickbar">4 &middot; ASIA-PACIFIC &middot; DELHI</div><span class="pill p-off">OFFICIAL</span></div><h3>India gives Nepal $1.62bn after flood</h3><p>$377m grant + $1.24bn credit.</p><div class="src">Reuters &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#2e5fa3"/>
+<g fill="#e8a34c"><circle cx="95" cy="12" r="2.5"/><circle cx="126" cy="20" r="2.5"/><circle cx="140" cy="38" r="2.5"/><circle cx="126" cy="50" r="2.5"/><circle cx="95" cy="54" r="2.5"/><circle cx="64" cy="50" r="2.5"/><circle cx="50" cy="38" r="2.5"/><circle cx="64" cy="20" r="2.5"/><circle cx="80" cy="12" r="2.5"/><circle cx="110" cy="12" r="2.5"/></g>
+<text x="95" y="42" font-size="24" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">22</text>
+</svg><div class="kickrow"><div class="kickbar">5 &middot; EUROPE &middot; BRUSSELS</div><span class="pill p-off">OFFICIAL</span></div><h3>EU proposes 22nd Russia sanctions pack</h3><p>60 banks off SWIFT, 70+ ships.</p><div class="src">European Commission &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#cfd8e2"/>
+<rect x="0" y="44" width="190" height="20" fill="#5d4a2c"/>
+<rect x="0" y="44" width="190" height="3" fill="#f8f3e4"/>
+<g fill="#1d1a14"><rect x="64" y="26" width="62" height="13"/><rect x="76" y="15" width="12" height="11"/><rect x="106" y="20" width="5" height="6"/></g>
+<path d="M86 26 Q91 14 86 6 Q97 14 95 26 Z" fill="#c65a1a"/>
+<path d="M104 26 Q109 16 104 10 Q115 16 113 26 Z" fill="#b3271e"/>
+<text x="158" y="24" font-size="14" fill="#b3271e" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">429</text>
+</svg><div class="kickrow"><div class="kickbar">6 &middot; EUROPE &middot; BELGIUM</div><span class="pill p-conf">CONFIRMED</span></div><h3>Belgium&rsquo;s sky shuts for 14 hours</h3><p>429 flights, 59,500 flyers hit.</p><div class="src">Brussels Airport &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#4a8a94"/>
+<circle cx="28" cy="12" r="9" fill="#e8a34c"/>
+<rect x="0" y="40" width="190" height="18" fill="#2e6b73"/>
+<path d="M0 46 Q25 42 50 46 T100 46 T150 46 T190 46" fill="none" stroke="#f8f3e4" stroke-width="1.5"/>
+<g fill="#1d1a14"><ellipse cx="86" cy="24" rx="13" ry="4.5"/><rect x="79" y="24" width="14" height="4"/><rect x="75" y="22" width="5" height="3"/><rect x="92" y="22" width="5" height="3"/><rect x="83" y="28" width="3" height="5"/><rect x="88" y="28" width="3" height="5"/></g>
+<path d="M86 33 Q120 42 150 36" fill="none" stroke="#f8f3e4" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="150" y="16" font-size="13" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">DRONE</text>
+</svg><div class="kickrow"><div class="kickbar">7 &middot; MIDEAST &middot; HORMUZ</div><span class="pill p-claim">CLAIM</span></div><h3>Iran says it downed a US drone</h3><p>Army claims a Lucas drone fell.</p><div class="src">Tasnim &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#7a9c6a"/>
+<rect x="0" y="42" width="190" height="22" fill="#2e7d4f"/>
+<rect x="20" y="10" width="4" height="36" fill="#f8f3e4"/>
+<rect x="165" y="10" width="4" height="36" fill="#f8f3e4"/>
+<rect x="12" y="10" width="19" height="3" fill="#f8f3e4"/>
+<rect x="157" y="10" width="19" height="3" fill="#f8f3e4"/>
+<rect x="76" y="20" width="38" height="4" fill="#8a5a2b" transform="rotate(-18 95 22)"/>
+<circle cx="140" cy="36" r="7" fill="#b3271e"/>
+<text x="95" y="16" font-size="14" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">239/5</text>
+</svg><div class="kickrow"><div class="kickbar">8 &middot; OCEANIA &middot; WELLINGTON</div><span class="pill p-conf">CONFIRMED</span></div><h3>NZ bat out 120 overs to deny India</h3><p>Mitchell 49*, Phillips 26*.</p><div class="src">ESPNcricinfo &middot; Mon 23 Nov</div></article>
+</div><div class="grow">
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#e8d9b0"/>
+<polygon points="95,6 130,24 60,24" fill="#8a6b3f"/>
+<rect x="66" y="24" width="58" height="26" fill="#f8f3e4" stroke="#1d1a14" stroke-width="2"/>
+<g fill="#1d1a14"><rect x="72" y="28" width="6" height="18"/><rect x="84" y="28" width="6" height="18"/><rect x="96" y="28" width="6" height="18"/><rect x="108" y="28" width="6" height="18"/></g>
+<text x="95" y="16" font-size="12" fill="#1d1a14" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">$14.7bn</text>
+<rect x="60" y="50" width="70" height="4" fill="#8a6b3f"/>
+</svg><div class="kickrow"><div class="kickbar">9 &middot; AMERICAS &middot; WASHINGTON</div><span class="pill p-off">OFFICIAL</span></div><h3>US hits Iran&rsquo;s shadow banks</h3><p>30 names hit; $14.7bn flagged.</p><div class="src">US Treasury &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#e8a34c"/>
+<polygon points="0,64 0,44 70,36 130,44 190,38 190,64" fill="#5d4a2c"/>
+<rect x="118" y="26" width="34" height="18" fill="#5d4a2c"/>
+<path d="M38 44 Q44 24 36 12 Q50 22 48 32 Q60 18 56 6 Q70 22 62 44 Z" fill="#b3271e"/>
+<path d="M84 44 Q90 28 82 16 Q96 26 94 34 Q106 20 102 8 Q116 24 108 44 Z" fill="#c65a1a"/>
+<rect x="152" y="40" width="26" height="11" fill="#f8f3e4" stroke="#1d1a14"/>
+<polygon points="152,40 165,32 178,40" fill="#b3271e"/>
+<text x="160" y="20" font-size="14" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">24</text>
+</svg><div class="kickrow"><div class="kickbar">10 &middot; ASIA-PACIFIC &middot; CIKANDE</div><span class="pill p-conf">CONFIRMED</span></div><h3>Cikande toll confirmed at 24</h3><p>About 30 missing; IDs take weeks.</p><div class="src">Reuters &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#dfe6ee"/>
+<circle cx="60" cy="24" r="16" fill="#2e5fa3"/>
+<circle cx="60" cy="24" r="11" fill="none" stroke="#f8f3e4" stroke-width="2"/>
+<circle cx="60" cy="24" r="4" fill="#f8f3e4"/>
+<rect x="104" y="34" width="44" height="18" fill="#8a6b3f"/>
+<rect x="104" y="34" width="44" height="4" fill="#5d4a2c"/>
+<path d="M112 34 Q118 22 126 34" fill="none" stroke="#1d1a14" stroke-width="2"/>
+<text x="150" y="22" font-size="15" fill="#1d1a14" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">397</text>
+</svg><div class="kickrow"><div class="kickbar">11 &middot; MIDEAST &middot; JABALIA</div><span class="pill p-rep">REPORTED</span></div><h3>Strike kills UNRWA worker in Jabalia</h3><p>Al-Helo died at a well; 3 wounded.</p><div class="src">Reuters / UNRWA &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#4c9950"/>
+<rect x="0" y="46" width="190" height="18" fill="#2e7d4f"/>
+<ellipse cx="95" cy="34" rx="36" ry="13" fill="#f8f3e4" opacity="0.9"/>
+<circle cx="95" cy="34" r="9" fill="#1d1a14"/>
+<path d="M90 34 L95 29 L100 34 L95 39 Z" fill="#f8f3e4"/>
+<text x="160" y="20" font-size="14" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">91</text>
+<rect x="14" y="8" width="26" height="14" fill="#b3271e"/>
+<rect x="14" y="8" width="26" height="5" fill="#f8f3e4"/>
+</svg><div class="kickrow"><div class="kickbar">12 &middot; AFRICA &middot; CENTURION</div><span class="pill p-conf">CONFIRMED</span></div><h3>Proteas skittle Bangladesh for 91</h3><p>Jansen 3-17, Rabada 3-23.</p><div class="src">ESPNcricinfo &middot; Mon 23 Nov</div></article>
+<article class="card"><svg viewBox="0 0 190 58" xmlns="http://www.w3.org/2000/svg">
+<rect width="190" height="58" fill="#1f2a4a"/>
+<g fill="#f8f3e4"><circle cx="20" cy="10" r="1.6"/><circle cx="56" cy="6" r="1.6"/><circle cx="96" cy="12" r="1.6"/><circle cx="140" cy="8" r="1.6"/><circle cx="176" cy="14" r="1.6"/><circle cx="34" cy="24" r="1.6"/><circle cx="120" cy="26" r="1.6"/><circle cx="160" cy="30" r="1.6"/></g>
+<rect x="82" y="18" width="26" height="14" fill="#c7d3d8"/>
+<rect x="76" y="24" width="6" height="4" fill="#e8a34c"/>
+<rect x="108" y="24" width="6" height="4" fill="#e8a34c"/>
+<path d="M82 18 L74 10 M108 18 L116 10" stroke="#c7d3d8" stroke-width="2"/>
+<circle cx="150" cy="44" r="5" fill="#e8a34c"/>
+<text x="95" y="52" font-size="14" fill="#f8f3e4" text-anchor="middle" font-family="Noto Serif Display, serif" font-weight="900">SPACE</text>
+</svg><div class="kickrow"><div class="kickbar">13 &middot; WORLD / SPACE &middot; BERLIN</div><span class="pill p-rep">REPORTED</span></div><h3>NATO vows to defend space</h3><p>Rutte answers satellite reports.</p><div class="src">Reuters &middot; Mon 23 Nov</div></article>
+</div></section>
+<section class="band"><div class="mapwrap"><h4>WHERE IT HAPPENED</h4><svg width="440" height="205" viewBox="0 0 440 205" xmlns="http://www.w3.org/2000/svg">
+<rect width="440" height="205" fill="#dfe7ea"/>
+<g stroke="#c7d3d8" stroke-width="1"><path d="M0 41 L440 41 M0 82 L440 82 M0 123 L440 123 M0 164 L440 164"/><path d="M73 0 L73 205 M147 0 L147 205 M220 0 L220 205 M293 0 L293 205 M367 0 L367 205"/></g>
+<g fill="#e7dab6" stroke="#b3a37f" stroke-width="1">
+<polygon points="10,40 44,28 78,22 108,24 122,36 108,54 88,64 72,56 60,74 40,72 20,56"/>
+<polygon points="128,18 148,14 152,26 134,30"/>
+<polygon points="76,98 98,92 108,108 100,138 88,154 78,128"/>
+<polygon points="196,32 214,22 234,24 246,34 238,48 220,54 204,48 194,42"/>
+<polygon points="202,68 226,60 246,72 250,96 238,126 222,138 208,112 200,88"/>
+<polygon points="250,26 292,16 340,16 384,24 406,38 398,54 366,56 344,50 322,64 292,60 262,50 250,40"/>
+<polygon points="300,60 314,58 308,80"/>
+<polygon points="330,66 344,62 348,74 334,78"/>
+<polygon points="392,44 402,40 406,48 396,52"/>
+<polygon points="350,118 384,110 402,120 396,140 366,142 350,132"/>
+</g>
+<rect x="322" y="86" width="12" height="5" fill="#e7dab6" stroke="#b3a37f"/>
+<rect x="340" y="92" width="12" height="5" fill="#e7dab6" stroke="#b3a37f"/>
+<rect x="352" y="82" width="10" height="5" fill="#e7dab6" stroke="#b3a37f"/>
+<polygon points="420,148 428,144 430,152 422,154" fill="#e7dab6" stroke="#b3a37f"/>
+<g font-family="Noto Sans, sans-serif" font-weight="700" font-size="9" text-anchor="middle">
+<g><circle cx="252" cy="64" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="252" y="67.5" fill="#f8f3e4">1</text></g>
+<g><circle cx="38" cy="50" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="38" y="53.5" fill="#f8f3e4">2</text></g>
+<g><circle cx="248" cy="30" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="248" y="33.5" fill="#f8f3e4">3</text></g>
+<g><circle cx="318" cy="82" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="318" y="85.5" fill="#f8f3e4">4</text></g>
+<g><circle cx="212" cy="36" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="212" y="39.5" fill="#f8f3e4">5</text></g>
+<g><circle cx="202" cy="48" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="202" y="51.5" fill="#f8f3e4">6</text></g>
+<g><circle cx="290" cy="66" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="290" y="69.5" fill="#f8f3e4">7</text></g>
+<g><circle cx="424" cy="150" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="424" y="153.5" fill="#f8f3e4">8</text></g>
+<g><circle cx="56" cy="60" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="56" y="63.5" fill="#f8f3e4">9</text></g>
+<g><circle cx="336" cy="90" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="336" y="93.5" fill="#f8f3e4">10</text></g>
+<g><circle cx="258" cy="52" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="258" y="55.5" fill="#f8f3e4">11</text></g>
+<g><circle cx="228" cy="130" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="228" y="133.5" fill="#f8f3e4">12</text></g>
+<g><circle cx="228" cy="30" r="7.5" fill="#b3271e" stroke="#f8f3e4" stroke-width="1.5"/><text x="228" y="33.5" fill="#f8f3e4">13</text></g>
+</g>
+</svg><div class="maplegend">PINS 1&ndash;13: THE DRAWN STORIES, NUMBERED AS ON THE PAGE</div></div>
+<div class="briefwrap"><div class="briefhead"><span>ALSO ON MONDAY &mdash; 19 MORE STORIES</span><span>EVERY ONE DATED MONDAY 23 NOVEMBER 2026</span></div>
+<div class="briefs"><div class="bcol">
+<div class="brief"><b class="num">14</b> <span class="dateline">Russia</span> &mdash; 153 drones fired overnight; 134 downed, 11 sites hit. <span class="bsrc">Ukrainian Air Force</span></div>
+<div class="brief"><b class="num">15</b> <span class="dateline">Kharkiv</span> &mdash; Morning drone strikes hit homes; 2 people hurt. <span class="bsrc">h.ua</span></div>
+<div class="brief"><b class="num">16</b> <span class="dateline">Helsinki</span> &mdash; MPs back tank traps on the Russia border. <span class="bsrc">Bloomberg</span></div>
+<div class="brief"><b class="num">17</b> <span class="dateline">London</span> &mdash; FTSE, Paris, Frankfurt open higher on Nvidia news. <span class="bsrc">AFP</span></div>
+<div class="brief"><b class="num">18</b> <span class="dateline">Seoul</span> &mdash; Kospi &minus;3.3% to a 10-month low; SK Hynix &minus;13%. <span class="bsrc">Al Jazeera</span></div>
+<div class="brief"><b class="num">19</b> <span class="dateline">Taipei</span> &mdash; Taiex rebounds +2.2% after its worst week since 1990. <span class="bsrc">CoinEdition</span></div>
+<div class="brief"><b class="num">20</b> <span class="dateline">Dhaka</span> &mdash; Bangladesh vows to jail Hasina if she returns. <span class="bsrc">Reuters</span></div>
+<div class="brief"><b class="num">21</b> <span class="dateline">Mumbai</span> &mdash; Sensex slides ~370 points in the AI rout. <span class="bsrc">CoinEdition</span></div>
+<div class="brief"><b class="num">22</b> <span class="dateline">Hong Kong</span> &mdash; Fifth straight loss; AI index down ~60% in 2026. <span class="bsrc">CoinEdition</span></div>
+<div class="brief"><b class="num">23</b> <span class="dateline">New York</span> &mdash; Bitcoin jumps to ~$63,900; gold +$50 to $3,666. <span class="bsrc">BeInCrypto</span></div>
+</div><div class="bcol">
+<div class="brief"><b class="num">24</b> <span class="dateline">Washington</span> &mdash; Delta outage opens Thanksgiving week travel. <span class="bsrc">FlyingWith</span></div>
+<div class="brief"><b class="num">25</b> <span class="dateline">Bridgetown</span> &mdash; Guterres calls for global AI safety rules in a year. <span class="bsrc">UN News</span></div>
+<div class="brief"><b class="num">26</b> <span class="dateline">Hormuz</span> &mdash; Two supertankers hit mines, IRGC says. <span class="bsrc">Sepah News</span></div>
+<div class="brief"><b class="num">27</b> <span class="dateline">Sanaa</span> &mdash; Yemeni army claims 816 strikes in a day. <span class="bsrc">Yemeni Army</span></div>
+<div class="brief"><b class="num">28</b> <span class="dateline">Taiz</span> &mdash; Houthi missile kills 2, wounds 8 in a village. <span class="bsrc">Yemeni Army</span></div>
+<div class="brief"><b class="num">29</b> <span class="dateline">Tehran</span> &mdash; Iran vows &ldquo;all means&rdquo; vs blockade; Trump eyes 2027. <span class="bsrc">Reuters</span></div>
+<div class="brief"><b class="num">30</b> <span class="dateline">Bayelsa</span> &mdash; Boat toll rises to 29; 50 rescued, NEMA tells BBC. <span class="bsrc">NEMA / BBC</span></div>
+<div class="brief"><b class="num">31</b> <span class="dateline">Sydney</span> &mdash; ASX &minus;0.2% as the AI rout reaches Australia. <span class="bsrc">CoinEdition</span></div>
+<div class="brief"><b class="num">32</b> <span class="dateline">Washington</span> &mdash; Trump &ldquo;looking into&rdquo; Iran dirty-bomb report; Tehran denies. <span class="bsrc">One Turn</span></div>
+</div></div>
+<div class="pilllegend"><span class="pill p-conf">CONFIRMED</span><span>2+ outlets</span><span class="pill p-off">OFFICIAL</span><span>official figures</span><span class="pill p-rep">REPORTED</span><span>one outlet</span><span class="pill p-claim">CLAIM</span><span>one side&rsquo;s claim</span></div>
+</div></section>
+<div class="datecheck"><h4>&#10003; DATE CHECK &mdash; MONDAY 23 NOVEMBER 2026</h4><div class="dcbody"><p>Kept out &mdash; wrong day: COP31 ends with no deal &middot; Sun 22 Nov &middot; Democrats reach 258 House seats &middot; Sun 22 Nov &middot; Istanbul rally over media crackdown &middot; Sun 22 Nov &middot; Likud&ndash;Yashar talks end without deal &middot; Sun 22 Nov &middot; Shenzhen summit: Trump, Xi, Putin &middot; Thu 19 Nov &middot; &lsquo;El Chapo Isidro&rsquo; captured &middot; Fri 20 Nov &middot; Vyshneve supermarket strike kills 3 &middot; Sun 22 Nov &middot; Kryvyi Rih strike kills a child &middot; Sat 21 Nov.</p><p>Reported Monday, happened earlier: Benghazi attack (early Sun) &middot; Dymer strike (early Sun) &middot; Cikande fire (Sat) &middot; Nigeria boat (Fri) &middot; MQ-1 drone claim (Sun). Not yet launched: Russia&rsquo;s &lsquo;Sputnik-S&rsquo; satellite. Not yet decided: Trump&rsquo;s next Iran move &mdash; he may wait until 2027. Every story here is Monday 23 November 2026, except items the page dates earlier.</p></div></div>
+<div class="verdict"><div class="vlabel">THE VERDICT</div><div class="vtext">One Monday, 32 stories, zero slow news days.</div></div>
+<footer><span>Every story here is Monday 23 November 2026 &middot; Sources named on every drawn card &middot; All illustrations original drawings</span><span>THE WORLD IN ONE PAGE &middot; MONDAY EDITION</span></footer>
+</div></body></html>
