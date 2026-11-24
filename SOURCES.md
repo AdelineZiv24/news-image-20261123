@@ -5,6 +5,11 @@ Every story on the page happened or was first reported on Monday
 (see the DATE CHECK box). Headlines below are the outlets' own;
 the page text is our own writing.
 
+Region counts in the legend are by subject: card 9, the US Treasury
+action against Iran's shadow banks, counts to Mideast. Legend:
+Europe 8, Asia-Pacific 6, Americas 5, Mideast 6, Africa 4,
+Oceania 1, World/Space 2 — 32 stories.
+
 ## The 13 drawn stories
 
 1. **Reuters / AP / CNN** — Ukraine sank a Russian warship docked in Libya — announced 23 Nov 2026 (Reuters item published 2026-11-23T08:05:51Z); Zelenskyy said seven Ukrainian-made naval drones sank the corvette Merkury (commissioned 2023) at Benghazi and destroyed a Ka-27 helicopter aboard; the dry cargo ship MV Angara was also hit. The attack itself took place in the early hours of Sunday 22 Nov — the page dates it earlier in the DATE CHECK. REPORTED pill: Libyan officials told AP the corvette was severely damaged, not sunk.
@@ -26,26 +31,38 @@ the page text is our own writing.
 14. **Ukrainian Air Force (via h.ua)** — Russia attacked Ukraine with 153 strike drones from 18:00 on 22 Nov into 23 Nov; air defences neutralised 134 by 08:00, impacts recorded at 11 locations.
 15. **h.ua** — Russian drones attacked the Industrial and Shevchenkivskyi districts of Kharkiv on the morning of 23 Nov 2026, hitting a residential building; 2 people injured.
 16. **Bloomberg (via The Piaz)** — Finnish lawmakers back tank traps along the Russian border — reported 23 Nov 2026; Defence Committee chair Heikki Autto said Helsinki is studying Ukrainian fortifications to evaluate permanent border barriers in peacetime.
-17. **AFP (via EconomyLens)** — London, Paris and Frankfurt opened higher on Monday 23 Nov 2026 as the Nvidia news lifted tech; FTSE 100 +0.2% at 10,367.27 (08:15 GMT).
-18. **Al Jazeera / CoinEdition** — Kospi sinks to a ten-month low — 23 Nov 2026; Kospi closed −3.36% at 4,706.40 after falling as much as 5.8% intraday; Samsung −3.1%, SK Hynix −13%+.
-19. **CoinEdition** — Asia market recap, 23 Nov 2026: Taiwan's Taiex rebounded +2.23% to 36,835.58 after its worst week since 1990.
+17. **Reuters** — NATO to send early-warning aircraft to Poland — WARSAW, 23 Nov 2026; after three Russian Kh-101 cruise missiles landed in eastern Poland on Friday 20 Nov (prosecutors confirmed fragments from Dubna-made missiles; no injuries), NATO's Supreme Allied Commander Europe authorised the forward deployment of an AWACS aircraft, announced after Monday's North Atlantic Council meeting in Brussels; Polish deputy defence minister Pawel Zalewski confirmed an AWACS would be made available to Poland.
+18. **AFP (via EconomyLens)** — London, Paris and Frankfurt opened higher on Monday 23 Nov 2026 as the Nvidia news lifted tech; FTSE 100 +0.2% at 10,367.27 (08:15 GMT).
+19. **Al Jazeera / CoinEdition** — Kospi sinks to a ten-month low — 23 Nov 2026; Kospi closed −3.36% at 4,706.40 after falling as much as 5.8% intraday; Samsung −3.1%, SK Hynix −13%+.
 20. **Reuters (via JustSecurity Early Edition, 23 Nov 2026)** — Bangladeshi State Minister for Foreign Affairs Shama Obaed Islam told Reuters on Monday that Bangladesh will arrest and jail former prime minister Sheikh Hasina if she returns from India.
-21. **CoinEdition** — Asia market recap, 23 Nov 2026: in India the Sensex slid about 370 points.
+21. **Reuters** — US blacklists Megaspeed — WASHINGTON, 23 Nov 2026; the Commerce Department added Singapore-based Megaspeed, the Nvidia-linked cloud firm at the centre of the Jensen Huang / Alice Huang affair, to the Entity List, with six affiliates across Singapore, Malaysia and Thailand, over alleged diversion of advanced AI chips to China; the rule was filed Monday 23 Nov.
 22. **CoinEdition** — Asia market recap, 23 Nov 2026: Hong Kong marked a fifth straight losing session; an index of Hong Kong-listed AI stocks is down nearly 60% this year.
 23. **BeInCrypto** — Bitcoin jumped from about $61,200 to nearly $63,900 within minutes of the Nvidia announcement on 23 Nov 2026, settling near $63,400; gold rose about $50 to $3,666 an ounce.
 24. **FlyingWith Weekly Brief, 23 Nov 2026** — Delta's outage opens Thanksgiving week; 81.5 million Americans are about to travel.
 25. **UN News** — UN chief urges talks on a global AI safety framework — 23 Nov 2026; at the close of the Bridgetown Special Summit on AI Safety in Barbados, António Guterres called on member states to develop a multilateral AI Risk Management Framework within the next year.
-26. **Sepah News (via The World Opinion)** — Two supertankers hit mines in the Strait of Hormuz, IRGC navy says — reported 23 Nov 2026; the IRGC said two tankers passing through "unauthorised" routes were hit by explosions east of Hormuz on Sunday.
-27. **World Today Journal** — Yemeni forces claim 816 strikes in 24 hours — 23 Nov 2026; the Yemeni army said 149 Houthi fighters were killed or wounded and 71 vehicles destroyed in its 'Fajr Al-Yemen' offensive.
+26. **AP** — Drone attack on Colombia police base — BOGOTA, 23 Nov 2026; explosive-laden drones struck the Norte de Santander police headquarters in Cúcuta before dawn on Monday (~02:15 local), injuring three civilians — a man, a woman and an 18-month-old baby — in their home in the Tasajero neighbourhood and damaging more than 60 homes; police jamming is believed to have pushed the drones off target; no group had claimed it by Monday evening, with the ELN the leading suspicion. First urban drone attack on a major Colombian city.
+27. **Reuters** — COP31 fallout — 23 Nov 2026; the Antalya summit's closing plenary ended Sunday 22 Nov without an overarching agreement (the longest COP on record; the fossil-fuel transition language was stripped from the final draft). On Monday, Turkish President Erdogan said after a cabinet meeting that the summit had laid "a valuable foundation" for the next round despite the missing cover decision; 46 decisions were adopted and 90+ countries backed the electrification pledge. The page dates the closing gavel earlier in the DATE CHECK and carries Monday's reaction as the brief.
 28. **Yemeni Army (via EIN / Arab News)** — Two civilians killed, eight injured in Houthi attacks in Yemen's Taiz — 23 Nov 2026; a Houthi ballistic missile struck a home in Kahlan village, Al-Aqrudh district.
 29. **Reuters / Al Jazeera** — Iran says it will use 'all available means' to counter the US blockade — 23 Nov 2026; Foreign Ministry spokesman Esmaeil Baghaei called the blockade "an act of military aggression" at a Monday briefing; Trump said in a Sunday Fox News interview he was inclined to resume strikes after the new year if no deal is reached, and wants a permanent deal.
 30. **NEMA / BBC** — Bayelsa boat toll rises to 29 — NEMA told the BBC on Mon 23 Nov 2026 that 29 people had died and 50 were rescued after the boat capsized on Friday 20 Nov; the accident itself is dated earlier in the DATE CHECK.
-31. **CoinEdition** — Asia market recap, 23 Nov 2026: ASX 200 8,573.6 (−0.22%).
-32. **One Turn (Iran page, updated Mon 23 Nov 2026)** — Trump says the US is 'looking into' a report of an Iranian dirty-bomb plan; Iran denies it.
+31. **AFP / UN OCHA** — Drone strikes hit Khartoum — strikes in the early hours of Sunday 22 Nov wrecked a house and damaged a UN premises with staff inside in a civilian neighbourhood; four people were killed around the capital (three in northern Omdurman, a child south of Khartoum) and nine wounded; the UN and US condemned the attacks on Monday 23 Nov, the UN statement attributing them to the RSF, while a Sudanese army source claimed the drones were launched from Ethiopia's Bahir Dar airport (unverified). The page dates the strikes earlier in the DATE CHECK.
+32. **ESA** — BepiColombo safely in Mercury orbit — ESA update dated 23 Nov 2026; the orbit-insertion burn itself ran on Saturday 21 Nov (18:24 UTC), during which a software glitch ended the burn early and put the spacecraft into safe mode; on Monday ESA confirmed BepiColombo is safe and in a stable orbit around Mercury after its eight-year journey, ahead of the two orbiters' separation on 9–10 December. The page dates the capture earlier in the DATE CHECK.
+
+## Swapped out in the improvement round (verified, but cut for weight)
+
+- **CoinEdition** — Taiwan's Taiex rebounded +2.23% to 36,835.58 after its worst week since 1990 (Asia-market cluster trim).
+- **CoinEdition** — India's Sensex slid about 370 points in the AI rout (Asia-market cluster trim).
+- **CoinEdition** — ASX 200 8,573.6 (−0.22%) as the AI rout reached Australia (Asia-market cluster trim).
+- **Sepah News (via The World Opinion)** — Two supertankers hit mines in the Strait of Hormuz, IRGC navy says — cut as contested: our text said two tankers reported 23 Nov; another roundup said three tankers reported 24 Nov, and the explosions were dated Sunday.
+- **World Today Journal** — Yemeni forces claim 816 strikes in 24 hours — single-source partisan claim, weakest sourcing among the briefs.
+- **One Turn (Iran page)** — Trump says the US is 'looking into' a report of an Iranian dirty-bomb plan; Iran denies it — weakest sourcing among the briefs.
+
+## Checked and rejected on date
+
+- **Anthropic / Riemann hypothesis** — surfaced in Monday roundups, but verification shows it is a weekend story: Alpöge published the claim on Friday 20 Nov 2026 and the Lean community's verification statement followed on Saturday 21 Nov. Not Monday news; kept off the page.
 
 ## Kept out (DATE CHECK exclusions — real near-misses from other days)
 
-- COP31 ends with no deal — Sun 22 Nov 2026 (talks ran to late Sunday, the longest COP on record).
 - Democrats reach 258 House seats — Sun 22 Nov 2026 (AP story first published 22 Nov; the 258th seat came when Chuck Hubbard defeated Virginia Foxx in North Carolina).
 - Istanbul rally over media crackdown — Sun 22 Nov 2026 (several thousand marched in Besiktas after the Sozcu TV raid).
 - Likud–Yashar talks end without deal — Sun 22 Nov 2026 (four hours in Herzliya; Eisenkot has until 6 Dec to form a government).
@@ -55,3 +72,9 @@ the page text is our own writing.
 - Kryvyi Rih strike kills a child — Sat 21 Nov 2026 overnight (a child and a young woman killed).
 - Sparta II tow — Sun 22 Nov 2026 (Russian cargo ship hit Sat 21 Nov off Finland; towing began Sunday).
 - Iran begins rolling power cuts — Sun 22 Nov 2026.
+
+Note on COP31: an earlier draft of this file listed the summit's
+no-deal close among the exclusions. The close itself was Sunday
+22 Nov and stays dated earlier on the page; what the page carries
+is Monday 23 Nov's reaction (Erdogan's statement and the fallout),
+so COP31 no longer sits in the exclusion list.

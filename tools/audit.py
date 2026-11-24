@@ -4,8 +4,9 @@
 share BAND 0.12-0.20, thumbnail dark @256 BAND 0.08-0.26, 13 drawn
 cards = 3 leads + 10 standard, 19 briefs, 32 stories total, light
 map 440x205, stat numerals 32px red #b3271e, region legend sums
-to 32: Europe 7, Asia-Pacific 7, Americas 5, Mideast 7, Africa 3,
-Oceania 2, World/Space 1).
+to 32: Europe 8, Asia-Pacific 6, Americas 5, Mideast 6, Africa 4,
+Oceania 1, World/Space 2 — counted by subject, so card 9, the US
+Treasury action against Iran's shadow banks, counts to Mideast).
 
 Fit parameters: lead art 300x80, standard art 190x58, masthead
 set at 66px so the full date fits one line, and the page's natural
